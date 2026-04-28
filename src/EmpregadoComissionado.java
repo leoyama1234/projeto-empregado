@@ -11,4 +11,14 @@ public class EmpregadoComissionado extends Empregado{
     public double calcularSalario(){
         return totalVendas * comissao / 100;
     }
+
+    @Override
+    public String toString() {
+        return "EmpregadoComissionado{" +
+                "comissao=" + comissao +
+                ", totalVendas=" + totalVendas +
+                ", matricula=" + matricula +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
